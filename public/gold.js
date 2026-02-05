@@ -1,4 +1,4 @@
-
+ 
 const goldEvent = new EventSource('/api/events')
 
 const priceDisplay = document.getElementById('price-display')

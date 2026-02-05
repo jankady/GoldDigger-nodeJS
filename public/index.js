@@ -14,6 +14,8 @@ investBtn.addEventListener('click',  async (e) => {
         document.getElementById('investment-summary').textContent = `You just bought ${currentOunces} ounces (ozt) for £${investmentAmount.value}.
     \n You will receive documentation shortly.`
 
+        dialogMessage.showModal()
+
         const mailResponse = await fetch('/api/invest', {
             method: 'POST',
             headers: {
@@ -26,14 +28,15 @@ investBtn.addEventListener('click',  async (e) => {
         })
 
         const result = await mailResponse.json()
-        if (result.success) alert('Investment confirmed! Email has been sent.')
+        if (result.success) document.getElementById('investment-summary').textContent = `
+        You just bought ${currentOunces} ounces (ozt) for £${investmentAmount.value}.
+        \n A confirmation email has been sent to your inbox.`
         else alert('Error: ' + result.error)
 
     } catch (err) {
         console.error('Error:', err)
         alert('Connection error. Please try again.')
     }
-    dialogMessage.showModal()
 })
 
 closeDialogBtn.addEventListener('click', (e) => {

@@ -4,14 +4,11 @@ import nodemailer from "nodemailer"
 export async function sendMail(investmentAmount, ounces){
     try {
         const transporter = nodemailer.createTransport({
-            service: "gmail", // Shortcut for Gmail's SMTP settings - see Well-Known Services
+            service: 'gmail',
             auth: {
-                type: "OAuth2",
-                user: "me@gmail.com",
-                clientId: process.env.GOOGLE_CLIENT_ID,
-                clientSecret: process.env.GOOGLE_CLIENT_SECRET,
-                refreshToken: process.env.GOOGLE_REFRESH_TOKEN,
-            },
+                user: process.env.GMAIL_USER,
+                pass: process.env.GMAIL_PASSWORD
+            }
         })
 
         const mailOptions = {
@@ -31,8 +28,8 @@ export async function sendMail(investmentAmount, ounces){
             `
         }
 
-        const info = await transporter.sendMail(mailOptions)
-        console.log('Email sent successfully:', info.response)
+        await transporter.sendMail(mailOptions)
+        console.log('Email sent successfully')
         return { success: true, message: 'Email sent' }
     } catch (error) {
         console.error('Error sending email:', error)
