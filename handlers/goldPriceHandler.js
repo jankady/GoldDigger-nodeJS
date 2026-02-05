@@ -13,36 +13,43 @@ export async function goldPriceHandler(req, res) {
         res.setHeader('Connection', 'keep-alive')
         // res.setHeader('Access-Control-Allow-Origin', '*')
 
-        // send initial data imimediately upon connection
-        const initialData = await fs.readFile(filePath, 'utf-8')
-        const initialObj = JSON.parse(initialData)
-        const lastEntry = initialObj[initialObj.length - 1]
+        // send initial data immediately upon connection
+        const rawData = await fs.readFile(filePath, 'utf-8')
+        const dataObj = JSON.parse(rawData)
+        const lastEntry = dataObj[dataObj.length - 1]
         res.write(`data: ${JSON.stringify(lastEntry)}\n\n`)
 
         // Send every 30 seconds new data
-        const intervalId = setInterval(async () => {
+        let lastPrice = lastEntry.price_libra
+        let lastSupply = lastEntry.supply
+
+        const intervalId = setInterval(() => {
             try {
-                const data = await fs.readFile(filePath, 'utf-8')
-                const dataObj = JSON.parse(data)
-                const lastEntry = dataObj[dataObj.length - 1]
-                const newEntry = simulateMarketActivity(lastEntry.price_libra, lastEntry.supply)
+                const newEntry = simulateMarketActivity(lastPrice, lastSupply)
                 const responseObj = {
                     uuid: uuidv4(),
                     price_libra: newEntry.price_libra,
                     time: new Date().toLocaleString(),
-                    price_change: (newEntry.price_libra - lastEntry.price_libra).toFixed(2),
-                    percentage_change: (((newEntry.price_libra - lastEntry.price_libra) / lastEntry.price_libra) * 100)
-                        .toFixed(2) + '%',
+                    price_change: (newEntry.price_libra - lastPrice).toFixed(2),
+                    percentage_change: (((newEntry.price_libra - lastPrice) / lastPrice) * 100).toFixed(2) + '%',
                     supply: newEntry.supply
                 }
+                lastPrice = newEntry.price_libra
+                lastSupply = newEntry.supply
                 dataObj.push(responseObj)
-                await fs.writeFile(filePath, JSON.stringify(dataObj, null, 2))
                 res.write(`data: ${JSON.stringify(responseObj)}\n\n`)
             } catch (err) {
                 console.error('Error in SSE interval:', err)
-                res.write(`data: ${JSON.stringify({error: 'Server error'})}\n\n`)
             }
         }, 10000)
+
+        // Handle client disconnect
+        req.on('close', () => {
+            fs.writeFile(filePath, JSON.stringify(dataObj, null, 2))
+            clearInterval(intervalId)
+            console.log('Client disconnected, SSE stream closed')
+        })
+
         // error handling for loop
         req.on('error', (err) => {
             clearInterval(intervalId)
