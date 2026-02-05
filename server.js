@@ -1,5 +1,6 @@
 import http from 'node:http';
 import {displayWeb} from "./webpage/displayWeb.js";
+import {goldPriceHandler} from "./handlers/goldPriceHandler.js";
 
 const PORT = 3000;
 
@@ -15,16 +16,17 @@ const server = http.createServer(async (req, res) => {
     }
 
     // API endpoint
-    if (req.url.startsWith('/api')) {
-        console.log('api endpoint hit');
-        return
+    if (req.url === '/api') {
+        return console.log('api endpoint hit');
+    }
+
+    if (req.url === '/api/events') {
+        return goldPriceHandler(req, res)
     }
 
     // web page
     if (!req.url.startsWith('/api')) {
-        console.log('web page endpoint hit');
-        await displayWeb(req, res)
-        return
+        return await displayWeb(req, res)
     }
 })
 
