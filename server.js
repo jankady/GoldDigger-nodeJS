@@ -6,6 +6,14 @@ const PORT = 3000;
 const __dirname = import.meta.dirname
 const server = http.createServer(async (req, res) => {
 
+    // Disable favicon requests
+    if (req.url === '/favicon.ico') {
+        // 404 favicon not found
+        res.writeHead(404);
+        res.end();
+        return;
+    }
+
     // API endpoint
     if (req.url.startsWith('/api')) {
         console.log('api endpoint hit');
@@ -15,7 +23,7 @@ const server = http.createServer(async (req, res) => {
     // web page
     if (!req.url.startsWith('/api')) {
         console.log('web page endpoint hit');
-        displayWeb(req, res)
+        await displayWeb(req, res)
         return
     }
 })
