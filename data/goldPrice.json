@@ -1,3 +1,530 @@
 [
-  {}
+  {
+    "uuid": "3f694829-eabc-476a-95bb-364fa27d96c4",
+    "price_libra": 3654.44,
+    "time": "2/5/2026, 5:31:18 PM",
+    "price_change": "0",
+    "percentage_change": "0%",
+    "supply": 460
+  },
+  {
+    "uuid": "0b75b2ec-1360-4544-ac13-dead7c41fd25",
+    "price_libra": 3623.36,
+    "time": "2/5/2026, 5:39:15 PM",
+    "price_change": "-31.08",
+    "percentage_change": "-0.85%",
+    "supply": 453
+  },
+  {
+    "uuid": "13f36466-5ab6-4c74-a8d1-054a856f9993",
+    "price_libra": 3739.37,
+    "time": "2/5/2026, 5:39:48 PM",
+    "price_change": "116.01",
+    "percentage_change": "3.20%",
+    "supply": 433
+  },
+  {
+    "uuid": "f82d1774-26e9-4970-90f6-cef7c9695b87",
+    "price_libra": 3815.29,
+    "time": "2/5/2026, 5:40:21 PM",
+    "price_change": "75.92",
+    "percentage_change": "2.03%",
+    "supply": 447
+  },
+  {
+    "uuid": "031cb3be-4e9d-41db-b068-91b6c62ba0a1",
+    "price_libra": 3760.8,
+    "time": "2/5/2026, 5:40:54 PM",
+    "price_change": "-54.49",
+    "percentage_change": "-1.43%",
+    "supply": 451
+  },
+  {
+    "uuid": "6de57709-5ec3-47ca-98ae-a9d8a4f156b9",
+    "price_libra": 3774.17,
+    "time": "2/5/2026, 5:41:40 PM",
+    "price_change": "13.37",
+    "percentage_change": "0.36%",
+    "supply": 446
+  },
+  {
+    "uuid": "697c999b-f5c0-4826-9a78-290dfa3625ea",
+    "price_libra": 4021.49,
+    "time": "2/5/2026, 5:43:19 PM",
+    "price_change": "247.32",
+    "percentage_change": "6.55%",
+    "supply": 431
+  },
+  {
+    "uuid": "2040d941-fcbf-43ce-96b8-526e1560ef25",
+    "price_libra": 3834.25,
+    "time": "2/5/2026, 5:44:45 PM",
+    "price_change": "-187.24",
+    "percentage_change": "-4.66%",
+    "supply": 446
+  },
+  {
+    "uuid": "cc649b9f-a6e1-4bed-a7ac-3822dba3261b",
+    "price_libra": 3871.93,
+    "time": "2/5/2026, 5:45:18 PM",
+    "price_change": "37.68",
+    "percentage_change": "0.98%",
+    "supply": 436
+  },
+  {
+    "uuid": "af70a57b-3ca3-4f17-ba30-797f5cd7cc5e",
+    "price_libra": 3916.19,
+    "time": "2/5/2026, 5:46:40 PM",
+    "price_change": "44.26",
+    "percentage_change": "1.14%",
+    "supply": 424
+  },
+  {
+    "uuid": "2f0eedda-b68f-4a93-8451-46da5f01babb",
+    "price_libra": 3909.76,
+    "time": "2/5/2026, 5:47:15 PM",
+    "price_change": "-6.43",
+    "percentage_change": "-0.16%",
+    "supply": 434
+  },
+  {
+    "uuid": "12b63173-9001-4d9d-bbad-2cbac97a81c7",
+    "price_libra": 3771.02,
+    "time": "2/5/2026, 5:49:02 PM",
+    "price_change": "-138.74",
+    "percentage_change": "-3.55%",
+    "supply": 430
+  },
+  {
+    "uuid": "b93c6d01-5ae0-485c-97e8-90d79df7b2a3",
+    "price_libra": 4101.58,
+    "time": "2/5/2026, 5:49:35 PM",
+    "price_change": "330.56",
+    "percentage_change": "8.77%",
+    "supply": 422
+  },
+  {
+    "uuid": "9026cfcb-bc70-42c0-981f-a83cdcfdfa8f",
+    "price_libra": 3889.78,
+    "time": "2/5/2026, 5:50:08 PM",
+    "price_change": "-211.80",
+    "percentage_change": "-5.16%",
+    "supply": 418
+  },
+  {
+    "uuid": "c69c75ad-972a-4685-a7b4-2baff7d606ff",
+    "price_libra": 3959.7,
+    "time": "2/5/2026, 5:50:33 PM",
+    "price_change": "69.92",
+    "percentage_change": "1.80%",
+    "supply": 397
+  },
+  {
+    "uuid": "8bcb26dc-db4d-4a2f-b68c-b710b6d1139c",
+    "price_libra": 3878.84,
+    "time": "2/5/2026, 5:50:46 PM",
+    "price_change": "-80.86",
+    "percentage_change": "-2.04%",
+    "supply": 414
+  },
+  {
+    "uuid": "a8d93416-c072-4107-ac33-ada6b55a98cd",
+    "price_libra": 3993.89,
+    "time": "2/5/2026, 5:50:59 PM",
+    "price_change": "115.05",
+    "percentage_change": "2.97%",
+    "supply": 417
+  },
+  {
+    "uuid": "a816c426-54b4-44ea-aaba-b9aadc01e395",
+    "price_libra": 4055.94,
+    "time": "2/5/2026, 5:51:12 PM",
+    "price_change": "62.05",
+    "percentage_change": "1.55%",
+    "supply": 402
+  },
+  {
+    "uuid": "4093ec2f-d96b-4080-90d3-8cbade3791e7",
+    "price_libra": 4135.02,
+    "time": "2/5/2026, 5:51:25 PM",
+    "price_change": "79.08",
+    "percentage_change": "1.95%",
+    "supply": 412
+  },
+  {
+    "uuid": "b58a04f7-dc67-43ff-baf6-9c0bc318f4e0",
+    "price_libra": 4007.43,
+    "time": "2/5/2026, 5:51:38 PM",
+    "price_change": "-127.59",
+    "percentage_change": "-3.09%",
+    "supply": 408
+  },
+  {
+    "uuid": "885e3aae-a1ba-4cdc-9395-2f797f08f9a6",
+    "price_libra": 4030.72,
+    "time": "2/5/2026, 5:51:51 PM",
+    "price_change": "23.29",
+    "percentage_change": "0.58%",
+    "supply": 423
+  },
+  {
+    "uuid": "b9757cb8-3d57-48b7-90c4-e22e209b6e5a",
+    "price_libra": 4067.56,
+    "time": "2/5/2026, 5:52:04 PM",
+    "price_change": "36.84",
+    "percentage_change": "0.91%",
+    "supply": 417
+  },
+  {
+    "uuid": "404d817e-2d49-4d4a-b873-89ce629ba784",
+    "price_libra": 4152.94,
+    "time": "2/5/2026, 5:52:18 PM",
+    "price_change": "85.38",
+    "percentage_change": "2.10%",
+    "supply": 404
+  },
+  {
+    "uuid": "6e8179fa-3b8f-487e-94af-0f422300b845",
+    "price_libra": 4055.95,
+    "time": "2/5/2026, 5:52:31 PM",
+    "price_change": "-96.99",
+    "percentage_change": "-2.34%",
+    "supply": 422
+  },
+  {
+    "uuid": "22c219d5-344b-472f-a79e-70b925c8f17d",
+    "price_libra": 4152.39,
+    "time": "2/5/2026, 5:52:44 PM",
+    "price_change": "96.44",
+    "percentage_change": "2.38%",
+    "supply": 415
+  },
+  {
+    "uuid": "e3d76992-7a76-4b2e-b19c-e5db11e46b6d",
+    "price_libra": 3848.18,
+    "time": "2/5/2026, 5:53:09 PM",
+    "price_change": "-304.21",
+    "percentage_change": "-7.33%",
+    "supply": 410
+  },
+  {
+    "uuid": "b24b25b4-6856-4464-a228-05cbc87b20b6",
+    "price_libra": 4015.84,
+    "time": "2/5/2026, 5:53:23 PM",
+    "price_change": "167.66",
+    "percentage_change": "4.36%",
+    "supply": 402
+  },
+  {
+    "uuid": "3a9de5ac-f44a-44ef-91e4-2f4d2e62f8ad",
+    "price_libra": 3957.73,
+    "time": "2/5/2026, 5:53:36 PM",
+    "price_change": "-58.11",
+    "percentage_change": "-1.45%",
+    "supply": 407
+  },
+  {
+    "uuid": "68f64885-e6ab-449c-9e28-38cf69353478",
+    "price_libra": 4076.25,
+    "time": "2/5/2026, 5:53:49 PM",
+    "price_change": "118.52",
+    "percentage_change": "2.99%",
+    "supply": 421
+  },
+  {
+    "uuid": "8b613cb7-03ee-4e3f-bc0c-8152e0a704d0",
+    "price_libra": 3793.71,
+    "time": "2/5/2026, 5:54:02 PM",
+    "price_change": "-282.54",
+    "percentage_change": "-6.93%",
+    "supply": 425
+  },
+  {
+    "uuid": "b1f4a924-be0e-47f0-8adf-16d6095e56d5",
+    "price_libra": 3889.15,
+    "time": "2/5/2026, 5:54:15 PM",
+    "price_change": "95.44",
+    "percentage_change": "2.52%",
+    "supply": 441
+  },
+  {
+    "uuid": "5b68fa5a-42df-440e-90a4-a8c4448b71e6",
+    "price_libra": 4064.02,
+    "time": "2/5/2026, 5:54:28 PM",
+    "price_change": "174.87",
+    "percentage_change": "4.50%",
+    "supply": 420
+  },
+  {
+    "uuid": "1bd7b22a-24cd-476a-8579-02fc7b586d53",
+    "price_libra": 3886.69,
+    "time": "2/5/2026, 5:54:41 PM",
+    "price_change": "-177.33",
+    "percentage_change": "-4.36%",
+    "supply": 417
+  },
+  {
+    "uuid": "38051830-d671-4908-a3e6-7a0c00c47442",
+    "price_libra": 4002.92,
+    "time": "2/5/2026, 5:54:54 PM",
+    "price_change": "116.23",
+    "percentage_change": "2.99%",
+    "supply": 418
+  },
+  {
+    "uuid": "16aa379c-6d15-457d-bcf4-b5f4b0304981",
+    "price_libra": 3638.5,
+    "time": "2/5/2026, 5:55:07 PM",
+    "price_change": "-364.42",
+    "percentage_change": "-9.10%",
+    "supply": 435
+  },
+  {
+    "uuid": "4efdfc22-457e-4e0f-828e-c912c84e1cad",
+    "price_libra": 3772.05,
+    "time": "2/5/2026, 5:55:20 PM",
+    "price_change": "133.55",
+    "percentage_change": "3.67%",
+    "supply": 451
+  },
+  {
+    "uuid": "288e651f-749c-4b8c-b36e-95f0818fc03f",
+    "price_libra": 3673.24,
+    "time": "2/5/2026, 5:55:34 PM",
+    "price_change": "-98.81",
+    "percentage_change": "-2.62%",
+    "supply": 435
+  },
+  {
+    "uuid": "872d7783-e0c4-492a-94b5-872a6146c274",
+    "price_libra": 3607.12,
+    "time": "2/5/2026, 5:55:47 PM",
+    "price_change": "-66.12",
+    "percentage_change": "-1.80%",
+    "supply": 452
+  },
+  {
+    "uuid": "462940c4-6cc6-4851-986c-bf7e065fa12c",
+    "price_libra": 3846.01,
+    "time": "2/5/2026, 5:56:00 PM",
+    "price_change": "238.89",
+    "percentage_change": "6.62%",
+    "supply": 434
+  },
+  {
+    "uuid": "0814840c-ea67-4005-95ba-25bb9752e6b6",
+    "price_libra": 3726.67,
+    "time": "2/5/2026, 5:56:13 PM",
+    "price_change": "-119.34",
+    "percentage_change": "-3.10%",
+    "supply": 425
+  },
+  {
+    "uuid": "44d1a77c-4610-4351-92f7-70cac461ddca",
+    "price_libra": 4014.85,
+    "time": "2/5/2026, 5:56:26 PM",
+    "price_change": "288.18",
+    "percentage_change": "7.73%",
+    "supply": 426
+  },
+  {
+    "uuid": "2a26452b-4ba6-443c-bdd6-2d3548fec008",
+    "price_libra": 4065.95,
+    "time": "2/5/2026, 5:56:39 PM",
+    "price_change": "51.10",
+    "percentage_change": "1.27%",
+    "supply": 415
+  },
+  {
+    "uuid": "e8423059-c75f-4201-a263-dc0d4ed4665c",
+    "price_libra": 3862.19,
+    "time": "2/5/2026, 5:57:00 PM",
+    "price_change": "-203.76",
+    "percentage_change": "-5.01%",
+    "supply": 419
+  },
+  {
+    "uuid": "153efdfd-3c4f-45a8-8219-1f1c71ca2503",
+    "price_libra": 3981.4,
+    "time": "2/5/2026, 5:57:13 PM",
+    "price_change": "119.21",
+    "percentage_change": "3.09%",
+    "supply": 420
+  },
+  {
+    "uuid": "8927bef1-0c8d-4d36-9884-d5c73f553c4a",
+    "price_libra": 4018.09,
+    "time": "2/5/2026, 5:57:33 PM",
+    "price_change": "36.69",
+    "percentage_change": "0.92%",
+    "supply": 424
+  },
+  {
+    "uuid": "e7f8a502-6860-4d66-871e-5cd2bc109168",
+    "price_libra": 4122.09,
+    "time": "2/5/2026, 5:57:46 PM",
+    "price_change": "104.00",
+    "percentage_change": "2.59%",
+    "supply": 406
+  },
+  {
+    "uuid": "d2965c78-26d6-416c-a053-bc3157ecd4fb",
+    "price_libra": 4205.55,
+    "time": "2/5/2026, 5:57:59 PM",
+    "price_change": "83.46",
+    "percentage_change": "2.02%",
+    "supply": 401
+  },
+  {
+    "uuid": "8d6043cb-3b7b-44a2-97e2-e64428007828",
+    "price_libra": 4154.75,
+    "time": "2/5/2026, 5:58:12 PM",
+    "price_change": "-50.80",
+    "percentage_change": "-1.21%",
+    "supply": 409
+  },
+  {
+    "uuid": "368e30c1-911f-4f54-b8f5-c1abb9df89ae",
+    "price_libra": 4071,
+    "time": "2/5/2026, 5:58:25 PM",
+    "price_change": "-83.75",
+    "percentage_change": "-2.02%",
+    "supply": 426
+  },
+  {
+    "uuid": "83aa48f7-8a6a-400a-9c29-51944a6f7af0",
+    "price_libra": 3901.92,
+    "time": "2/5/2026, 5:58:39 PM",
+    "price_change": "-169.08",
+    "percentage_change": "-4.15%",
+    "supply": 437
+  },
+  {
+    "uuid": "c4e01a4b-102c-47af-9473-d31b217e82e3",
+    "price_libra": 3605.49,
+    "time": "2/5/2026, 5:58:52 PM",
+    "price_change": "-296.43",
+    "percentage_change": "-7.60%",
+    "supply": 453
+  },
+  {
+    "uuid": "7a08f8d3-dd30-4956-a0ef-3a2f8ecfcf11",
+    "price_libra": 3969.49,
+    "time": "2/5/2026, 5:59:05 PM",
+    "price_change": "364.00",
+    "percentage_change": "10.10%",
+    "supply": 441
+  },
+  {
+    "uuid": "3424ef1f-d7a2-4120-a765-2e98afe6956e",
+    "price_libra": 3852.99,
+    "time": "2/5/2026, 5:59:18 PM",
+    "price_change": "-116.50",
+    "percentage_change": "-2.93%",
+    "supply": 434
+  },
+  {
+    "uuid": "5975b87b-42d9-4d21-bec7-74aeb9696c41",
+    "price_libra": 3703.28,
+    "time": "2/5/2026, 5:59:31 PM",
+    "price_change": "-149.71",
+    "percentage_change": "-3.89%",
+    "supply": 444
+  },
+  {
+    "uuid": "714f1f98-f73e-495e-92ce-6e24b03c1bfb",
+    "price_libra": 3980.95,
+    "time": "2/5/2026, 5:59:44 PM",
+    "price_change": "277.67",
+    "percentage_change": "7.50%",
+    "supply": 426
+  },
+  {
+    "uuid": "2903eadf-bc2f-45d5-8ff6-14cdd15eb3fd",
+    "price_libra": 3641.74,
+    "time": "2/5/2026, 5:59:58 PM",
+    "price_change": "-339.21",
+    "percentage_change": "-8.52%",
+    "supply": 439
+  },
+  {
+    "uuid": "0d0b7de8-5936-46a2-912f-b24bcf3161fb",
+    "price_libra": 3896.86,
+    "time": "2/5/2026, 6:00:11 PM",
+    "price_change": "255.12",
+    "percentage_change": "7.01%",
+    "supply": 419
+  },
+  {
+    "uuid": "44572590-da6a-4e54-8163-cdcc7b3f1611",
+    "price_libra": 3995.2,
+    "time": "2/5/2026, 6:00:24 PM",
+    "price_change": "98.34",
+    "percentage_change": "2.52%",
+    "supply": 432
+  },
+  {
+    "uuid": "c1606090-799a-41ed-a03a-bb1f2ce8dab5",
+    "price_libra": 3798.14,
+    "time": "2/5/2026, 6:00:37 PM",
+    "price_change": "-197.06",
+    "percentage_change": "-4.93%",
+    "supply": 415
+  },
+  {
+    "uuid": "0fef57c0-5a81-4f89-a8c5-8380afb84c81",
+    "price_libra": 3786.31,
+    "time": "2/5/2026, 6:00:50 PM",
+    "price_change": "-11.83",
+    "percentage_change": "-0.31%",
+    "supply": 418
+  },
+  {
+    "uuid": "e04f4731-b62a-443b-a06a-723860665988",
+    "price_libra": 3635.44,
+    "time": "2/5/2026, 6:01:03 PM",
+    "price_change": "-150.87",
+    "percentage_change": "-3.98%",
+    "supply": 436
+  },
+  {
+    "uuid": "e3cd744f-8413-45ae-9725-1b134f089fdf",
+    "price_libra": 3953.8,
+    "time": "2/5/2026, 6:01:16 PM",
+    "price_change": "318.36",
+    "percentage_change": "8.76%",
+    "supply": 433
+  },
+  {
+    "uuid": "86cbd95a-fff5-4ccf-99e3-ecc9f585064d",
+    "price_libra": 3886.06,
+    "time": "2/5/2026, 6:01:30 PM",
+    "price_change": "-67.74",
+    "percentage_change": "-1.71%",
+    "supply": 451
+  },
+  {
+    "uuid": "043544fc-4d8a-49d9-ad1f-a3a551e85da1",
+    "price_libra": 3821.83,
+    "time": "2/5/2026, 6:01:43 PM",
+    "price_change": "-64.23",
+    "percentage_change": "-1.65%",
+    "supply": 434
+  },
+  {
+    "uuid": "3dab2e43-fb1d-4a8c-89ad-9f3791d8e537",
+    "price_libra": 3645.67,
+    "time": "2/5/2026, 6:01:56 PM",
+    "price_change": "-176.16",
+    "percentage_change": "-4.61%",
+    "supply": 454
+  },
+  {
+    "uuid": "bc635fed-5abf-4a86-ada1-a0bcae4d2d43",
+    "price_libra": 3652.17,
+    "time": "2/5/2026, 6:02:09 PM",
+    "price_change": "6.50",
+    "percentage_change": "0.18%",
+    "supply": 446
+  }
 ]
