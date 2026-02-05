@@ -2,8 +2,17 @@ import fs from "node:fs/promises"
 import path from "node:path"
 import { v4 as uuidv4 } from "uuid"
 import {simulateMarketActivity} from "../data/goldData.js";
+import {sendResponse} from "../utility/sendResponse.js";
 
-export async function goldPriceHandler(req, res) {
+
+let lastPrice = 0
+let lastSupply = 0
+export function getPrice(res){
+    sendResponse(res, 200, 'application/json',
+        JSON.stringify({price_libra: lastPrice}))
+}
+
+async function goldPriceHandler(req, res) {
     try {
         const filePath = path.join('data', 'goldPrice.json')
         res.statusCode = 200
@@ -19,10 +28,10 @@ export async function goldPriceHandler(req, res) {
         const lastEntry = dataObj[dataObj.length - 1]
         res.write(`data: ${JSON.stringify(lastEntry)}\n\n`)
 
-        // Send every 30 seconds new data
-        let lastPrice = lastEntry.price_libra
-        let lastSupply = lastEntry.supply
 
+        lastPrice = lastEntry.price_libra
+        lastSupply = lastEntry.supply
+        // Send every 10 seconds new data
         const intervalId = setInterval(() => {
             try {
                 const newEntry = simulateMarketActivity(lastPrice, lastSupply)
@@ -62,3 +71,5 @@ export async function goldPriceHandler(req, res) {
         res.end(JSON.stringify({error: 'Failed to initialize SSE'}))
     }
 }
+
+export default goldPriceHandler

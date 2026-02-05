@@ -2,10 +2,9 @@ import http from 'node:http'
 import path from "node:path"
 import fs from "node:fs/promises"
 import {displayWeb} from "./webpage/displayWeb.js"
-import {goldPriceHandler} from "./handlers/goldPriceHandler.js"
+import goldPriceHandler, {getPrice} from "./handlers/goldPriceHandler.js"
 import {dataGET} from "./handlers/dataGET.js"
 import {sendResponse} from "./utility/sendResponse.js";
-import {getContentType} from "./utility/getContentType.js";
 
 const PORT = 3000
 
@@ -27,6 +26,9 @@ const server = http.createServer(async (req, res) => {
         // SSE endpoint for gold price updates
         if (req.url === '/api/events') {
             return await goldPriceHandler(req, res)
+        }
+        if (req.url === '/api/events/price') {
+            return getPrice(res)
         }
 
         // 404 for other API endpoints
