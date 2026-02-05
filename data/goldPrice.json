@@ -1862,5 +1862,13 @@
     "price_change": "92.39",
     "percentage_change": "1.25%",
     "supply": 190
+  },
+  {
+    "uuid": "a3c02b5d-714f-47c2-bb2f-ac11d09a653a",
+    "price_libra": 7730.98,
+    "time": "2/5/2026, 9:10:55 PM",
+    "price_change": "241.72",
+    "percentage_change": "3.23%",
+    "supply": 191
   }
 ]

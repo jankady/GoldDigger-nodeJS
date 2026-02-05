@@ -1,10 +1,12 @@
+import 'dotenv/config.js'
 import http from 'node:http'
 import path from "node:path"
 import fs from "node:fs/promises"
 import {displayWeb} from "./webpage/displayWeb.js"
 import goldPriceHandler, {getPrice} from "./handlers/goldPriceHandler.js"
 import {dataGET} from "./handlers/dataGET.js"
-import {sendResponse} from "./utility/sendResponse.js";
+import {sendResponse} from "./utility/sendResponse.js"
+import {handlePost} from "./handlers/handlePost.js";
 
 const PORT = 3000
 
@@ -39,6 +41,11 @@ const server = http.createServer(async (req, res) => {
         }
     }
 
+    // POST endpoint for email send
+    if (req.url === '/api/invest' && req.method === 'POST') {
+        await handlePost(req, res)
+        return
+    }
 
     // web page
     if (!req.url.startsWith('/api')) {
