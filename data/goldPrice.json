@@ -1430,5 +1430,29 @@
     "price_change": "95.91",
     "percentage_change": "1.64%",
     "supply": 248
+  },
+  {
+    "uuid": "d130939e-7455-4806-98dc-3c1bb9664b22",
+    "price_libra": 6057.36,
+    "time": "2/5/2026, 7:04:34 PM",
+    "price_change": "120.38",
+    "percentage_change": "2.03%",
+    "supply": 245
+  },
+  {
+    "uuid": "d6c2d30a-8484-405f-bf73-0f482e0c7a7e",
+    "price_libra": 6139.24,
+    "time": "2/5/2026, 7:04:44 PM",
+    "price_change": "81.88",
+    "percentage_change": "1.35%",
+    "supply": 242
+  },
+  {
+    "uuid": "6f507104-2776-4189-a595-8b32c5d891fd",
+    "price_libra": 6104.18,
+    "time": "2/5/2026, 7:04:54 PM",
+    "price_change": "-35.06",
+    "percentage_change": "-0.57%",
+    "supply": 242
   }
 ]

@@ -1,8 +1,13 @@
-import http from 'node:http';
-import {displayWeb} from "./webpage/displayWeb.js";
-import {goldPriceHandler} from "./handlers/goldPriceHandler.js";
+import http from 'node:http'
+import path from "node:path"
+import fs from "node:fs/promises"
+import {displayWeb} from "./webpage/displayWeb.js"
+import {goldPriceHandler} from "./handlers/goldPriceHandler.js"
+import {dataGET} from "./handlers/dataGET.js"
+import {sendResponse} from "./utility/sendResponse.js";
+import {getContentType} from "./utility/getContentType.js";
 
-const PORT = 3000;
+const PORT = 3000
 
 const __dirname = import.meta.dirname
 const server = http.createServer(async (req, res) => {
@@ -10,18 +15,25 @@ const server = http.createServer(async (req, res) => {
     // Disable favicon requests
     if (req.url === '/favicon.ico') {
         // 404 favicon not found
-        res.writeHead(404);
-        res.end();
-        return;
+        res.writeHead(404)
+        res.end()
+        return
     }
-    if (req.method === 'GET') {
+    if (req.url.startsWith('/api') && req.method === 'GET') {
         // API endpoint
         if (req.url === '/api') {
-            return console.log('api endpoint hit');
+            return await dataGET(res)
         }
-
+        // SSE endpoint for gold price updates
         if (req.url === '/api/events') {
             return await goldPriceHandler(req, res)
+        }
+
+        // 404 for other API endpoints
+        else {
+            sendResponse(res, 404, 'application/json',
+                JSON.stringify({error: 'Endpoint not found'}))
+            return
         }
     }
 
@@ -29,6 +41,12 @@ const server = http.createServer(async (req, res) => {
     // web page
     if (!req.url.startsWith('/api')) {
         return await displayWeb(req, res)
+    }
+    else {
+        // Invalid URL - return 404 page
+        const filePath =  path.join('public', '404.html')
+        const payload = await fs.readFile(filePath, 'utf-8')
+        sendResponse(res, 404, 'text/html', payload)
     }
 })
 
