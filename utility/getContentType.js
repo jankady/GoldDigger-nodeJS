@@ -1,5 +1,5 @@
 
-
+// return content type based on file extension
 export function getContentType(extension) {
     if (extension === '.html') return 'text/html'
     if (extension === '.ico') return 'image/x-icon'

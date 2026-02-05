@@ -5,11 +5,12 @@ import {getContentType} from "../utility/getContentType.js";
 
 export async function displayWeb(req, res){
     try {
+        // Determine file to serve
         const fileType = req.url === '/' ? 'index.html' : req.url
         const extension = path.extname(fileType)
+        // Get content type
         const contentType = getContentType(extension)
         const filePath =  path.join('public', fileType)
-
         const payload = await fs.readFile(filePath)
         sendResponse(res, 200, contentType, payload)
     }

@@ -14,15 +14,17 @@ const server = http.createServer(async (req, res) => {
         res.end();
         return;
     }
+    if (req.method === 'GET') {
+        // API endpoint
+        if (req.url === '/api') {
+            return console.log('api endpoint hit');
+        }
 
-    // API endpoint
-    if (req.url === '/api') {
-        return console.log('api endpoint hit');
+        if (req.url === '/api/events') {
+            return await goldPriceHandler(req, res)
+        }
     }
 
-    if (req.url === '/api/events') {
-        return goldPriceHandler(req, res)
-    }
 
     // web page
     if (!req.url.startsWith('/api')) {
