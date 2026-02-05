@@ -1,0 +1,25 @@
+{
+  "name": "golddigger",
+  "version": "1.0.0",
+  "description": "Node JS app for playfull gold buying",
+  "keywords": [
+    "nodejs",
+    "gold",
+    "javascript"
+  ],
+  "homepage": "https://github.com/jankady/GoldDigger-nodeJS#readme",
+  "bugs": {
+    "url": "https://github.com/jankady/GoldDigger-nodeJS/issues"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/jankady/GoldDigger-nodeJS.git"
+  },
+  "license": "ISC",
+  "author": "Jan Kaduch",
+  "type": "commonjs",
+  "main": "server.js",
+  "scripts": {
+    "start": "node server.js"
+  }
+}
